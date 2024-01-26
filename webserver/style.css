@@ -1,14 +1,14 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 20px;
-  background-color: #75241e;
-  color: #75241e;
+  background-color: #f8f8f8;
+  color: #333;
 }
 
 header {
   text-align: center;
-  background-color: #75241e;
-  color: #75241e;
+  background-color: #57221e;
+  color: #fff;
   padding: 20px;
 }
 
@@ -18,7 +18,7 @@ h1 {
 
 article {
   margin-top: 20px;
-  background-color: #75241e;
+  background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@ article {
 footer {
   margin-top: 20px;
   text-align: center;
-  background-color: #75241e;
-  color: #75241e;
+  background-color: #57221e; /* Warna footer diubah */
+  color: #fff;
   padding: 10px;
 }
