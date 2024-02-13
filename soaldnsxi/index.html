@@ -1,47 +1,40 @@
-import random
-
-# Daftar pertanyaan dan jawaban
-questions = [
-    {
-        "question": "Apa ibukota Indonesia?",
-        "options": ["Jakarta", "Surabaya", "Bandung", "Semarang"],
-        "answer": "Jakarta"
-    },
-    {
-        "question": "Siapakah presiden Indonesia saat ini?",
-        "options": ["Joko Widodo", "Susilo Bambang Yudhoyono", "Megawati Soekarnoputri", "Abdurrahman Wahid"],
-        "answer": "Joko Widodo"
-    },
-    # Tambahkan pertanyaan dan jawaban lainnya di sini
-]
-
-# Fungsi untuk mengacak urutan pertanyaan
-def shuffle_questions(questions):
-    random.shuffle(questions)
-
-# Fungsi untuk menampilkan pertanyaan
-def display_question(question):
-    print(question["question"])
-    for i, option in enumerate(question["options"]):
-        print(f"{i+1}. {option}")
-
-# Fungsi untuk memeriksa jawaban
-def check_answer(question, answer):
-    return answer == question["answer"]
-
-# Fungsi utama untuk menjalankan kuis
-def main():
-    shuffle_questions(questions)
-    score = 0
-    for question in questions:
-        display_question(question)
-        user_answer = input("Masukkan jawaban Anda (1/2/3/4): ")
-        if check_answer(question, question["options"][int(user_answer)-1]):
-            print("Jawaban Anda benar!")
-            score += 1
-        else:
-            print("Jawaban Anda salah.")
-    print(f"Skor Anda: {score}/{len(questions)}")
-
-if __name__ == "__main__":
-    main()
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal Pilihan Ganda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Soal Pilihan Ganda</h1>
+    <form action="#">
+      <ol>
+        <li>
+          <p>1. Pertanyaan soal pilihan ganda 1?</p>
+          <label>
+            <input type="radio" name="question1" value="A"> A) Jawaban A
+          </label><br>
+          <label>
+            <input type="radio" name="question1" value="B"> B) Jawaban B
+          </label><br>
+          <label>
+            <input type="radio" name="question1" value="C"> C) Jawaban C
+          </label><br>
+          <label>
+            <input type="radio" name="question1" value="D"> D) Jawaban D
+          </label><br>
+          <label>
+            <input type="radio" name="question1" value="E"> E) Jawaban E
+          </label><br>
+          <p>Kunci Jawaban: <strong>A</strong></p>
+        </li>
+        <!-- Soal 2 -->
+        <!-- Soal 3 -->
+        <!-- dst -->
+      </ol>
+    </form>
+  </div>
+</body>
+</html>
