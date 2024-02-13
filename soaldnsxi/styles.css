@@ -1,60 +1,33 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-}
-
-.question {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    padding: 20px;
-}
-
-.question p {
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.options {
-    list-style-type: none;
     padding: 0;
 }
 
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options {
+    list-style: none;
+    padding-left: 0;
+}
+
 .options li {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.options label {
-    cursor: pointer;
-    font-size: 16px;
-    transition: color 0.3s ease;
+.options li label {
+    display: block;
 }
 
-.options input[type="radio"] {
+.options li input[type="radio"] {
     margin-right: 10px;
-    opacity: 0;
-}
-
-.options input[type="radio"] + label:before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #1a73e8;
-    border-radius: 50%;
-    margin-right: 10px;
-    vertical-align: middle;
-    transition: background-color 0.3s ease;
-}
-
-.options input[type="radio"]:checked + label:before {
-    background-color: #1a73e8;
-}
-
-.options input[type="radio"]:checked + label {
-    color: #1a73e8;
-    font-weight: bold;
 }
