@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.question {
+    margin: 20px;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options li {
+    margin-bottom: 10px;
+}
+
+.options li label {
+    display: block;
+}
+
+.options li input[type="radio"] {
+    margin-right: 5px;
+}
