@@ -138,13 +138,13 @@ input#open {
 }
 
 .text-one:before {
-  content: "Valentine's";
+  content: "Valentine's day!!";
   top: 30px;
   color: #d04e4e;
 }
 
 .text-one:after {
-  content: "day!";
+  content: "Davina Sayang!";
   top: 60px;
 }
 
